@@ -41,7 +41,7 @@
                 android:value="com.example.android.sampleapp.activities.MainActivity"/>
         </activity>
         <activity
-            android:name=".FourthActivity"
+            android:name=".activities.FourthActivity"
             android:label="@string/title_activity_fourth"
             android:parentActivityName=".activities.MainActivity">
             <meta-data

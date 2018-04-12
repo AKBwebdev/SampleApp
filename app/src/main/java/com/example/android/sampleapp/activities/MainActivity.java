@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import com.example.android.sampleapp.FourthActivity;
 import com.example.android.sampleapp.R;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {

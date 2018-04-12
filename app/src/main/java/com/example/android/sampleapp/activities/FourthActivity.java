@@ -1,10 +1,10 @@
-package com.example.android.sampleapp;
+package com.example.android.sampleapp.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+import com.example.android.sampleapp.R;
 
 public class FourthActivity extends AppCompatActivity {
 
