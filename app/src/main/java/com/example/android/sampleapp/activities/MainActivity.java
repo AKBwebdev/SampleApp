@@ -6,14 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import com.example.android.sampleapp.FourthActivity;
 import com.example.android.sampleapp.R;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener {
 
     private Button mButtonFirst;    // for fragment onAttach
     private Button mButtonSecond;    // for tiled background
-    private Button mButtonThird;    // for include
-
+    private Button mButtonThird;    // for various fragments
+    private Button mButtonFourth;    // for snackbar
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         mButtonFirst = findViewById(R.id.button_onattach);
         mButtonSecond = findViewById(R.id.button_tiled);
         mButtonThird = findViewById(R.id.button_various);
+        mButtonFourth = findViewById(R.id.button_snackbar);
 
         // set onclick listeners
        setOnClickListeners();
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
         mButtonFirst.setOnClickListener(this);
         mButtonSecond.setOnClickListener(this);
         mButtonThird.setOnClickListener(this);
+        mButtonFourth.setOnClickListener(this);
     }
 
     @Override
@@ -49,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener {
                 break;
             case R.id.button_various:
                 startActivity(new Intent(this, ThirdActivity.class));
+                break;
+            case R.id.button_snackbar:
+                startActivity(new Intent(this, FourthActivity.class));
                 break;
         }
     }

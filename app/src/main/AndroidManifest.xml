@@ -40,6 +40,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.sampleapp.activities.MainActivity"/>
         </activity>
+        <activity
+            android:name=".FourthActivity"
+            android:label="@string/title_activity_fourth"
+            android:parentActivityName=".activities.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.sampleapp.activities.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>
